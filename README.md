@@ -6,6 +6,14 @@
 
 Waffarha Challenge app
 
+## Screenshots
+
+
+|                                               |                                               |
+| :-------------------------------------------: | :-------------------------------------------: |
+| <Image src="screenshots/screenshot-1.png" width ="300"> | <Image src="screenshots/screenshot-2.png" width ="300">  |
+| <Image src="screenshots/screenshot-3.png" width ="300">
+
 ---
 
 ## Getting Started 🚀
