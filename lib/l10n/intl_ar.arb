@@ -1,0 +1,10 @@
+{
+    "@@locale": "ar",
+    "counterAppBarTitle": "Contador",
+    "no_connection": "لا يوجد اتصال",
+    "try_again_later": "يرجى المحاولة مرة أخرى لاحقًا",
+    "loading" : "جار التحميل...",
+    "@counterAppBarTitle": {
+        "description": "Texto mostrado en la AppBar de la página del contador"
+    }
+}

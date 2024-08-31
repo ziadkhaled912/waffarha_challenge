@@ -1,0 +1,10 @@
+{
+    "@@locale": "en",
+    "counterAppBarTitle": "Counter",
+    "no_connection": "No connection",
+    "try_again_later": "Please try again later",
+    "loading" : "Loading...",
+    "@counterAppBarTitle": {
+        "description": "Text shown in the AppBar of the Counter Page"
+    }
+}

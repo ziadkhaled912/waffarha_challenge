@@ -1,0 +1,64 @@
+name: waffarha_challenge
+description: Waffarha Challenge app
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  bloc: ^8.1.4
+  cached_network_image: ^3.4.1
+  dartz: ^0.10.1
+  dio: ^5.6.0
+  equatable: ^2.0.5
+  faker: ^2.2.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.6
+  flutter_localizations:
+    sdk: flutter
+  flutter_screenutil: ^5.9.3
+  flutter_svg: ^2.0.10+1
+  hydrated_bloc: ^9.1.5
+  injectable: ^2.4.4
+  intl: ^0.19.0
+  logger: ^2.4.0
+  lottie: ^3.1.2
+  pretty_dio_logger: ^1.4.0
+  pretty_logger: ^1.0.0
+
+dev_dependencies:
+  bloc_test: ^9.1.7
+  build_runner: ^2.4.12
+  flutter_test:
+    sdk: flutter
+  injectable_generator: ^2.6.2
+  mocktail: ^1.0.4
+  very_good_analysis: ^6.0.0
+
+flutter_gen:
+  output: lib/generated/
+  assets:
+    outputs:
+      style: camel-case
+  integrations:
+    flutter_svg: true
+
+# Flutter Gen
+flutter_assets:
+  assets_path: assets/
+  output_path: lib/generated/
+  filename: assets.dart
+  field_prefix: null
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/lottie/
+
+flutter_intl:
+  enabled: true
