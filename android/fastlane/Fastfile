@@ -16,23 +16,23 @@
 default_platform(:android)
 
 platform :android do
-  desc "Firebase distribution lane"
+  desc "Firebase app distribution lane"
   lane :firebase_distribution do |options|
     begin
-      # Define varaibles
-      flavor = options[:flavor] || "development"
-      target = "lib/main/main_#{flavor}.dart"
+      # Define variables
+      flavor = options[:flavor]
       app_bundle_path = "../build/app/outputs/flutter-apk/app-#{flavor}-release.apk"
-      # Build Apk
-      sh "flutter clean"
-      sh "flutter pub get"
+
+      # Flutter build apk
+      sh "flutter clean && flutter pub get"
       sh "cd ../../ && dart run build_runner build --delete-conflicting-outputs"
       sh "flutter analyze"
-      sh "flutter build apk --release --flavor #{flavor} --target #{target}"
 
-      # Upload to Firebase
-      firebase_app_distribution(
-        app: "1:283100953486:android:f8f9aaa1a92e0d9293c2df",
+      sh "flutter build apk --release --flavor #{flavor} --target lib/main/main_#{flavor}.dart"
+
+      # Upload Apk to Firebase distribution
+    firebase_app_distribution(
+        app: ENV["FIREBASE_APP_ID"],
         firebase_cli_token: ENV["FIREBASE_CLI_TOKEN"],
         groups: "internal-testers",
         release_notes: "New version",

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "361333082802",
+    "project_id": "fastlane-session",
+    "storage_bucket": "fastlane-session.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361333082802:android:dcbbbbd445d89db7d857ab",
+        "android_client_info": {
+          "package_name": "com.ziad.dev.waffarha_challenge"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB23nXeEWElNlACEroGZfRhMSe_lgUppNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361333082802:android:a17b63b613a78bdfd857ab",
+        "android_client_info": {
+          "package_name": "com.ziad.dev.waffarha_challenge.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB23nXeEWElNlACEroGZfRhMSe_lgUppNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:waffarha_challenge/photos/data/enums/photos_request_enums.dart';
 import 'package:waffarha_challenge/photos/presentation/cubit/photos_cubit.dart';
-import 'package:waffarha_challenge/photos/presentation/page/photos_page.dart';
 import 'package:waffarha_challenge/photos/presentation/widgets/sort_sheet/sort_by_list_tile.dart';
 
 class SortSheet extends StatelessWidget {
