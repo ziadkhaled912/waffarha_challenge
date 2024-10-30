@@ -36,7 +36,7 @@ class Loader {
         builder: (context) {
           _dismissingContext = context;
           return PopScope(
-            onPopInvoked: (_) async => false,
+            // onPopInvoked: (_) async => false,
             child: const LoadingImage(),
           );
         },
