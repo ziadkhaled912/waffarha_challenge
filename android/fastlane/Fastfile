@@ -32,9 +32,9 @@ platform :android do
 
       # Upload Apk to Firebase distribution
     firebase_app_distribution(
-        app: ENV["FIREBASE_APP_ID"],
+        app: "1:361333082802:android:a17b63b613a78bdfd857ab",
         firebase_cli_token: ENV["FIREBASE_CLI_TOKEN"],
-        groups: "internal-testers",
+        groups: "internal_testers",
         release_notes: "New version",
         android_artifact_type: "APK",
         android_artifact_path: app_bundle_path,
