@@ -13,8 +13,8 @@ import 'package:injectable/injectable.dart' as _i526;
 
 import '../app/data/api_manager/api_manager.dart' as _i538;
 import '../app/data/api_manager/apis_manager_implementation.dart' as _i49;
-import '../photos/data/repository/photos_repository.dart' as _i186;
-import '../photos/presentation/cubit/photos_cubit.dart' as _i256;
+import '../photos/data/repository/photos_repository.dart' as _i774;
+import '../photos/presentation/cubit/photos_cubit.dart' as _i59;
 
 extension GetItInjectableX on _i174.GetIt {
 // initializes the registration of main-scope dependencies inside of GetIt
@@ -28,10 +28,10 @@ extension GetItInjectableX on _i174.GetIt {
       environmentFilter,
     );
     gh.lazySingleton<_i49.APIsManager>(() => _i49.APIsManager());
-    gh.lazySingleton<_i186.PhotosRepository>(
-        () => _i186.PhotosRepository(gh<_i538.APIsManager>()));
-    gh.factory<_i256.PhotosCubit>(
-        () => _i256.PhotosCubit(gh<_i186.PhotosRepository>()));
+    gh.lazySingleton<_i774.PhotosRepository>(
+        () => _i774.PhotosRepository(gh<_i538.APIsManager>()));
+    gh.factory<_i59.PhotosCubit>(
+        () => _i59.PhotosCubit(gh<_i774.PhotosRepository>()));
     return this;
   }
 }
